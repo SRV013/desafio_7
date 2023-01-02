@@ -4,7 +4,7 @@
          "module": "CommonJS",
          "moduleResolution": "node",
          "resolveJsonModule": true,
-         "outDir": "backend-dist"
+         "outDir": "dist"
     },
 "includes": ["./backend/**/*.ts"]
 }
