@@ -1,0 +1,8 @@
+node_modules
+backend-dist
+frontend-dist
+.env
+dist
+yarn.lock
+.parcel-cache
+node_modules

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700&family=Roboto:ital,wght@1,100&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Baloo Thambi 2", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.content__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .content__title {
+        text-align: center;
+    }
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    gap: 20px;
+}
+.content__container__desciption {
+    font-size: 20px;
+    text-align: center;
+}
+.mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+}
+.mascota__cargar {
+    font-size: 14px;
+    color: rgb(124, 124, 124);
+    position: absolute;
+    padding: 120px;
+}
+.mascota__imagen {
+    height: 250px;
+    width: 250px;
+    border: 2px solid #ffffff;
+    filter: drop-shadow(3px 4px 8px #a2a2a2);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.dz-image img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.mascota__imagen:hover {
+    border-color: #e3e3e3;
+    cursor: pointer;
+}
+.mascota__nombre {
+    color: #000;
+    min-width: 200px;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 1;
+    background: #e1e1e1;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0.8;
+    margin-top: -65px;
+    background: #ececec;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: -32px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px;
+    border-color: #b6b6b6;
+    border-style: double;
+}
+
+.small__button {
+    letter-spacing: 0.1px;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    padding: 8px 10px;
+    font-size: 12px;
+    min-width: 150px;
+    transition: all 0.3s ease-in-out;
+    background: #ebebeb;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.distancia a{
+    letter-spacing: .1px;
+    color: #000;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.distancia a:hover{
+    border: 2px solid #ffffff;
+    filter: drop-shadow(3px 4px 8px #a2a2a2);
+    cursor: pointer;
+}
+.encontradas , .cerca {
+    font-weight: bold;
+}
+input,
+textarea {
+    letter-spacing: 0.1px;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    min-width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+input,
+textarea:focus {
+    transition: 0.5s;
+    transform: scale(1.07);
+}
+textarea {
+    resize: none;
+    min-width: 320px;
+}
+button {
+    background: black;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    margin-top: 10px;
+    letter-spacing: 0.1px;
+    line-height: 1em;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    min-width: 200px;
+}
+button:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:disabled{
+    background:#e0e0e0;
+    cursor: progress;
+}
+input[type="checkbox"] {
+    height: 22px;
+    width: 22px;
+}
+label {
+    font-size: 20px;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 35px 190px;
+    justify-items: center;
+    align-items: center;
+}
