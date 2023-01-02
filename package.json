@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev:front": "parcel serve ./frontend/index.html",
-    "dev:back": "nodemon --watch './backend/**/*' -e ts --exec 'ts-node ./backend/index.ts'",
-    "dev": "yarn concurrently 'yarn dev:front' 'yarn dev:back'",
-    "build:back": "tsc",
-    "build:front": "parcel build ./frontend/index.html --dist-dir ./dist",
-    "build": "yarn run build:fe && yarn run build:be",
-    "start": "node ./backend-dist/index.js"
+     "dev:front": "parcel serve ./frontend/index.html",
+    "dev:api": "nodemon ./backend/index.ts",
+    "build:front": "parcel build './frontend/index.html'",
+    "build:api": "tsc ./backend/index.ts",
+    "build": "yarn build:front && yarn build:api",
+    "start": "node ./backend/index.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
