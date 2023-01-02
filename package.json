@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-     "dev:front": "parcel serve ./frontend/index.html",
-    "dev:api": "nodemon ./backend/index.ts",
-    "build:front": "parcel build './frontend/index.html'",
-    "build:api": "tsc ./backend/index.ts",
+    "dev:back": "nodemon --watch ./index.ts --exec ts-node ./backend/index.ts",
+    "dev:front": "parcel serve ./frontend/index.html",
+    "build:front": "parcel build ./frontend/index.html",
+    "build:api": "tsc",
     "build": "yarn build:front && yarn build:api",
     "start": "node ./backend/index.js"
   },
