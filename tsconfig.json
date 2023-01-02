@@ -6,5 +6,5 @@
     "allowSyntheticDefaultImports": true,
     "module": "CommonJS"
   },
- "files": ["./backend/index.ts"]
+ "files": ["backend/index.ts"]
 }
