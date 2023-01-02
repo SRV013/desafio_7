@@ -17,6 +17,8 @@ import { nuevoReporte } from "./controllers/reporte-controllers";
 import { borrarTabla } from "./db/conexion";
 import * as cors from "cors";
 import * as express from "express";
+import * as path from "path";
+
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(express.static("dist"));
@@ -193,7 +195,12 @@ app.get("/borrar", async (req, res) => {
     const borrar = await borrarTabla();
     res.json(borrar);
 });
-app.get("*", express.static(__dirname + "../../public"));
+const pathResolve = path.resolve("dist");
+app.use(express.static(path.join(__dirname, "../dist")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../dist/index.html"));
+  });
 
 app.listen(port, () => {
     console.log("todo OK en el puerto:", port);
