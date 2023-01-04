@@ -3,8 +3,7 @@
          "target": "esnext",
          "module": "CommonJS",
          "moduleResolution": "node",
-         "resolveJsonModule": true,
-         "outDir": "dist"
+         "resolveJsonModule": true
     },
-"includes": ["./backend/index.ts"]
+"includes": ["backend/index.ts"]
 }
