@@ -8,7 +8,7 @@
     "build:front": "parcel build './frontend/index.html'",
     "build:api": "tsc ./backend/index.ts",
     "build": "yarn build:front && yarn build:api",
-    "start": "node ./backend/index.js"
+    "start": "node ./be-dist/index.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
