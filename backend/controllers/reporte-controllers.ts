@@ -1,5 +1,5 @@
 import { Reportes } from "../db/reportes";
-import { sgMail, sendgridfrom } from "../lib/sendGrid";
+import { sgMail, sendgridfrom } from "../lib/sendgrid";
 
 // NUEVA REPORTE
 export async function nuevoReporte(
