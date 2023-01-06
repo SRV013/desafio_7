@@ -16,3 +16,5 @@ import "./pages/perdidas";
 import "./pages/reporte_vista";
 
 import "./pages/mensaje";
+
+console.log("index.ts");
