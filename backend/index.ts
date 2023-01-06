@@ -192,7 +192,7 @@ app.get("/borrar", async (req, res) => {
     res.json(borrar);
 });
 
-const relativeRoute = path.resolve(__dirname, "../dist");
+const relativeRoute = path.resolve(__dirname, "../../dist");
 app.use(express.static(relativeRoute));
 app.get("*", function(req, res){
     res.sendFile(relativeRoute + "/index.html");
