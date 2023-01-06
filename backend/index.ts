@@ -16,6 +16,7 @@ import {
 import { nuevoReporte } from "./controllers/reporte-controllers";
 import { borrarTabla } from "./db/conexion";
 import * as cors from "cors";
+import * as path from "path";
 import * as express from "express";
 const app = express();
 app.use(cors());
