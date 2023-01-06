@@ -1,6 +1,7 @@
 import { Router } from "@vaadin/router";
 const router = new Router(document.querySelector(`.root`));
 router.setRoutes([
+    { path: `/`, component: `inicio-web` },
     { path: `/inicio`, component: `inicio-web` },
     { path: `/login`, component: `login-pagina` },
     { path: `/usuario_nuevo`, component: `usuario-nuevo` },
