@@ -1,4 +1,3 @@
-import { index } from "./lib/algolia";
 import {
     crearUsuario,
     loginUsuario,
