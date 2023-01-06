@@ -1,5 +1,5 @@
 import { Mascota } from "../db/mascotas";
-import { index } from "../lib/algolia";
+import { index } from "../lib/angolia";
 import { cloudinary } from "../lib/cloudinary";
 
 // NUEVA MASCOTA

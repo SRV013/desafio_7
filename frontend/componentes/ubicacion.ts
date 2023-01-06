@@ -1,10 +1,7 @@
-import { Router } from "@vaadin/router";
 import { state } from "../state";
 import { initMap, initSearchForm } from "../lib/mapbox";
 import * as mapboxgl from "mapbox-gl";
 import "./ubicacion.css";
-import { getOriginalNode } from "typescript";
-
 class Ubicacion extends HTMLElement {
     connectedCallback() {
         this.render();

@@ -2,10 +2,8 @@ import "dotenv/config";
 import * as MapboxClient from 'mapbox';
 import * as mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-
 const MAPBOX_TOKEN = process.env.TOKEN_MAPBOX;
 const mapboxClient = new MapboxClient(MAPBOX_TOKEN);
-
 export function initMap(mapElement) {
     mapboxgl.accessToken = MAPBOX_TOKEN;
     return new mapboxgl.Map({
@@ -13,7 +11,6 @@ export function initMap(mapElement) {
 		style: 'mapbox://styles/mapbox/streets-v12',
       });
   }
-  
 export function initSearchForm(mapboxInput,callback) {
 	 mapboxClient.geocodeForward(
 		mapboxInput,
@@ -25,5 +22,4 @@ export function initSearchForm(mapboxInput,callback) {
 		function (err, data, res) {
 			if (!err) callback(data.features);
 		},
-	);
-}
+	); }

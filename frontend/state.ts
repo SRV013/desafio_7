@@ -3,7 +3,7 @@ const API_BASE_URL = process.env.API_HOST;
 const state = {
     data: {},
     getState() {
-      //  console.log("MI ESTADO ", this.data);
+        //  console.log("MI ESTADO ", this.data);
         return this.data;
     },
     getToken(cb) {

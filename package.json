@@ -1,12 +1,10 @@
 {
   "name": "sequalize",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
-    "dev:api": "nodemon --watch backend/**/* -e ts --exec ts-node ./backend/index.ts",
-    "dev:fe": "parcel serve ./frontend/index.html",
-    "dev:dev": "concurrently \"yarn dev:fe\" \"yarn dev:api\"",
-    "dev": "ts-node dev.ts",
+    "dev:front": "parcel serve ./frontend/index.html",
+    "dev:api": "nodemon --watch ./backend/index.ts  --exec ts-node ./backend/index.ts",
     "build:be": "tsc",
     "build:fe": "parcel build ./frontend/index.html --dist-dir ./dist",
     "build": "yarn build:be && yarn build:fe",
@@ -38,6 +36,7 @@
     "buffer": "^5.7.1",
     "crypto-browserify": "^3.12.0",
     "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "punycode": "^1.4.1",

@@ -1,5 +1,4 @@
 import { Router } from "@vaadin/router";
-import { state } from "../state";
 export class Inicio extends HTMLElement {
     connectedCallback() {
         this.render();
