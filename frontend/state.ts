@@ -1,6 +1,5 @@
 import "dotenv/config";
 const API_BASE_URL = process.env.API_HOST;
-console.log("MI ESTADO ", API_BASE_URL);
 const state = {
     data: {},
     getState() {
