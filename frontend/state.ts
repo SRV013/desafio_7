@@ -1,6 +1,5 @@
 import "dotenv/config";
-//const API_BASE_URL = process.env.API_HOST; 
-const API_BASE_URL = "https://m7-mascotas.onrender.com/";
+onst API_BASE_URL = process.env.API_HOST;
 const state = {
     data: {},
     getState() {
