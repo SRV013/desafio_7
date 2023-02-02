@@ -78,12 +78,13 @@ app.patch("/usuario/:id", nuevainstacia, async (req, res) => {
     const id = req.params.id;
     const { nombre, telefono, password } = req.body;
     if (password) {
-        await updateUsuarioPass(id, password);
+        const data =  await updateUsuarioPass(id, password);
+        res.json(data);
     }
     if (nombre || telefono) {
-        await updateUsuario(id, nombre, telefono);
+      const data = await updateUsuario(id, nombre, telefono);
+      res.json(data);
     }
-    res.json("actualizado!!!");
 });
 // NUEVA MASCOTA
 app.post("/mascota", nuevainstacia, async (req, res) => {
