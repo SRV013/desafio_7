@@ -8,11 +8,11 @@ export async function dataUsuario(id: number) {
 }
 
 // MODIFICAR USUARIO POR ID
-export async function updateUsuario(id:number,nombre:string,telefono:string){
+export async function updateUsuario(id:number,nombre:string,telefono:string,email:string){
   await Usuario.update( {nombre,telefono}, {
     where: { id },
   });
- return {nombre,telefono};
+ return {nombre,telefono,email};
 }
 // DATOS MAIL USUARIO
 export async function dataUsuarioMail(id: number) {
