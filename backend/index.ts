@@ -76,13 +76,13 @@ async function nuevainstacia(req, res, next) {
 // MODIFICAR DATOS USUARIO SIN PASS
 app.patch("/usuario/:id", nuevainstacia, async (req, res) => {
     const id = req.params.id;
-    const { nombre, telefono, password } = req.body;
+    const { nombre, telefono, password ,email } = req.body;
     if (password) {
         const data =  await updateUsuarioPass(id, password);
         res.json(data);
     }
     if (nombre || telefono) {
-      const data = await updateUsuario(id, nombre, telefono);
+      const data = await updateUsuario(id, nombre, telefono ,email);
       res.json(data);
     }
 });
