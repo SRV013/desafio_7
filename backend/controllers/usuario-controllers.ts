@@ -9,10 +9,10 @@ export async function dataUsuario(id: number) {
 
 // MODIFICAR USUARIO POR ID
 export async function updateUsuario(id:number,nombre:string,telefono:string){
-  const editarUsuario = await Usuario.update( {nombre,telefono}, {
+  await Usuario.update( {nombre,telefono}, {
     where: { id },
   });
- return editarUsuario;
+ return {nombre,telefono};
 }
 // DATOS MAIL USUARIO
 export async function dataUsuarioMail(id: number) {
