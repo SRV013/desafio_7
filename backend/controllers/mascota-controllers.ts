@@ -67,8 +67,8 @@ export async function editarMascota(id, data) {
             lat: data.lat,
             lng: data.lng,
         },
-    });
-    return data;
+    });    
+    return  data ;
 }
 // LEER MASCOTAS
 export async function leerMascota(idUsuario) {
