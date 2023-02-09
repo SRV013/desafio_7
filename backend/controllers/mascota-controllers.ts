@@ -68,7 +68,7 @@ export async function editarMascota(id, data) {
             lng: data.lng,
         },
     });    
-    return  data ;
+    return { ...data , id } ;
 }
 // LEER MASCOTAS
 export async function leerMascota(idUsuario) {
